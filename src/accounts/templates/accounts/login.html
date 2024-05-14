@@ -1,12 +1,15 @@
 {% extends "accounts/base.html" %}
 {% block title %} <title>Log in</title> {% endblock %}
 {% block content %}
-<h2>Log in</h2>
-
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Log in</button>
-</form>
-<a href="{% url 'accounts:signup' %}">Create Account</a>
+<section class="container flex flex-col items-center mx-auto">
+    <h2 class="mb-4 text-3xl font-semibold">Log in</h2>
+    <form class="flex flex-col items-center space-y-3" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="self-center w-1/2 px-2 py-1 bg-blue-400 rounded text-blue-50" type="submit">Log in</button>
+    </form>
+    <p class="my-4 text-xs ">If you don't have an account,
+        <a class="text-blue-600 underline" href="{% url 'accounts:signup' %}">Create Account</a>
+    </p>
+</section>
 {% endblock %}
