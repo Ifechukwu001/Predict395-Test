@@ -12,6 +12,7 @@ def post_create(request):
         if form.is_valid():
             form.instance.author = request.user
             form.save()
+            return redirect("blog:detail", pk=form.instance.pk)
     return render(request, "blog/post_create.html", {"form": form})
 
 
