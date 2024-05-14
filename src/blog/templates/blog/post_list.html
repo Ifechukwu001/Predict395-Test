@@ -1,12 +1,24 @@
 {% extends "blog/base.html" %}
 {% block title %} <title>Blog</title> {% endblock %}
 {% block content %}
-<h1>Blog</h1>
-<ul>
-    {% for post in posts %}
-    <li>
-        <a href="{% url 'blog:detail' post.pk %}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<section class="container mx-auto">
+
+    <div class="flex items-center justify-between mb-6 ">
+        <h1 class="font-mono text-2xl font-medium text-blue-500 underline">Blog</h1>
+        <a class="p-2 font-mono text-xs text-blue-400 border border-blue-400 rounded hover:text-white hover:bg-blue-400"
+            href="{% url 'blog:create' %}">
+            Create Post
+        </a>
+    </div>
+    <ul class="space-y-3">
+        {% for post in posts %}
+        <li class="px-4 py-2 text-blue-600 rounded shadow-md bg-blue-50 hover:shadow-inner hover:shadow-blue-300">
+            <a href="{% url 'blog:detail' post.pk %}">
+                <span class="font-bold">{{ post.title }}</span>
+                <span class="font-light">({{ post.published_date }})</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 {% endblock %}

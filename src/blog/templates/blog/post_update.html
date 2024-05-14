@@ -2,9 +2,12 @@
 {% block title %} <title>Update Post</title> {% endblock %}
 
 {% block content %}
-<h1>Update Post</h1>
-<form method="POST" class="post-form">{% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Save</button>
-</form>
+<section class="container mx-auto">
+    <h2 class="mb-6 text-xl font-semibold text-blue-500">Update Post</h2>
+    <form class="flex flex-col space-y-6" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="self-center w-1/2 px-2 py-1 bg-blue-400 rounded text-blue-50" type="submit">Save</button>
+    </form>
+</section>
 {% endblock %}

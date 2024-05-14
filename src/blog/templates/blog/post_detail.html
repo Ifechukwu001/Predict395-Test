@@ -2,11 +2,23 @@
 {% block title %} <title>{{ post.title }}</title> {% endblock %}
 
 {% block content %}
-<h1>{{ post.title }}</h1>
-<p>{{ post.content }}</p>
-<p>Published by {{ post.author }} on {{ post.published_date }}</p>
-{% if request.user == post.author %}
-<a href="{% url 'blog:update' post.pk %}">Update</a>
-<a href="{% url 'blog:delete' post.pk %}">Delete</a>
-{% endif %}
+<section class="container mx-auto space-y-4">
+    <h1 class="flex flex-col text-xl font-semibold text-blue-600">
+        <span class="text-lg font-light ">Title:</span>
+        <span>{{ post.title }}</span>
+    </h1>
+    <div>
+        <p class="text-lg font-light text-blue-600">Content:</p>
+        <p class="px-3 py-1 text-blue-600 border border-blue-600 rounded-md min-h-16">{{ post.content }}</p>
+    </div>
+    <p class="font-light text-blue-600 text-sm/3">Published by {{ post.author }} on {{ post.published_date }}</p>
+    {% if request.user == post.author %}
+    <div class="pt-6 text-sm">
+        <a class="p-2 font-mono text-xs text-blue-400 border border-blue-400 rounded hover:text-white hover:bg-blue-400"
+            href="{% url 'blog:update' post.pk %}">Update</a>
+        <a class="p-2 font-mono text-xs text-blue-400 border border-blue-400 rounded hover:text-white hover:bg-red-400"
+            href="{% url 'blog:delete' post.pk %}">Delete</a>
+    </div>
+    {% endif %}
+</section>
 {% endblock %}
