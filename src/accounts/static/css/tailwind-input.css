@@ -7,8 +7,12 @@
         @apply my-4;
     }
 
+    label {
+        @apply text-blue-600/80;
+    }
+
     input {
-        @apply w-full px-4 py-2 border border-blue-300 rounded-lg outline-blue-400;
+        @apply w-full px-4 py-2 text-xs text-blue-700 border border-blue-300 rounded-lg outline-blue-400;
     }
 
 }
