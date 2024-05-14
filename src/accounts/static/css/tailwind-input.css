@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    div {
+        @apply my-4;
+    }
+
+    input {
+        @apply w-full px-4 py-2 border border-blue-300 rounded-lg outline-blue-400;
+    }
+
+}
