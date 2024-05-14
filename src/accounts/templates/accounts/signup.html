@@ -3,10 +3,16 @@
 {% block title %} <title>Sign up</title> {% endblock %}
 
 {% block content %}
-<h2>Sign up</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign up</button>
-</form>
+<section class="container flex flex-col items-center mx-auto">
+
+    <h2 class="mb-4 text-3xl font-semibold">Sign up</h2>
+    <form class="flex flex-col" method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button class="self-center w-1/2 bg-blue-400 rounded text-blue-50" type="submit">Sign up</button>
+    </form>
+    <p class="my-4 text-xs ">If you have an account,
+        <a class="text-blue-600 underline" href="{% url 'accounts:login' %}">Sign In</a>
+    </p>
+</section>
 {% endblock %}
