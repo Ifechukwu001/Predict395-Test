@@ -2,7 +2,7 @@
 {% block title %} <title>Log in</title> {% endblock %}
 {% block content %}
 <section class="container flex flex-col items-center mx-auto">
-    <h2 class="mb-4 text-3xl font-semibold">Log in</h2>
+    <h2 class="mb-4 text-3xl font-semibold text-blue-500">Log in</h2>
     <form class="flex flex-col items-center space-y-3" method="post">
         {% csrf_token %}
         {{ form.as_p }}

@@ -5,7 +5,7 @@
 {% block content %}
 <section class="container flex flex-col items-center mx-auto">
 
-    <h2 class="mb-4 text-3xl font-semibold">Sign up</h2>
+    <h2 class="mb-4 text-3xl font-semibold text-blue-500">Sign up</h2>
     <form class="flex flex-col" method="post">
         {% csrf_token %}
         {{ form.as_div }}
