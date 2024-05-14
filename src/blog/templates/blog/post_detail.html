@@ -5,4 +5,7 @@
 <h1>{{ post.title }}</h1>
 <p>{{ post.content }}</p>
 <p>Published by {{ post.author }} on {{ post.published_date }}</p>
+{% if request.user == post.author %}
+<a href="{% url 'blog:update' post.pk %}" class="btn btn-default">Update</a>
+{% endif %}
 {% endblock %}
