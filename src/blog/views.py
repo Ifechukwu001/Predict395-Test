@@ -33,3 +33,9 @@ def post_update(request, pk):
             form.save()
             return redirect("blog:detail", pk=post.pk)
     return render(request, "blog/post_update.html", {"form": form})
+
+
+def post_delete(request, pk):
+    post = Post.objects.get(pk=pk)
+    post.delete()
+    return redirect("blog:list")
