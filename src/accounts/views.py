@@ -21,7 +21,7 @@ def login_view(request):
             login(request, user)
             if next_url:
                 return redirect(next_url)
-            return redirect("accounts:login")
+            return redirect("blog:list")
     return render(request, "accounts/login.html", {"form": form})
 
 
