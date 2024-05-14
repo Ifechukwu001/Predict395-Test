@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    label {
+        @apply text-blue-600/80;
+    }
+
+    input {
+        @apply w-full px-4 py-2 text-xs text-blue-700 border border-blue-300 rounded-lg outline-blue-400;
+    }
+
+    textarea {
+        @apply w-full h-24 px-4 py-2 text-xs text-blue-700 border border-blue-300 rounded-lg outline-blue-400;
+    }
+
+}
