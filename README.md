@@ -31,4 +31,21 @@ To run the program you must have `Python` installed on your computer.
     ```
 
 The server is now available at http://localhost:8888
-    
+
+## Demo
+
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/143aad96-9f6e-4ac1-b1ae-4641df7dd57a)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/1692b5cb-5250-4731-92aa-3b1fe460c2a1)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/beb0bcfd-e790-463d-978b-11472e1566fa)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/0a005681-30dc-4102-8164-a68bebe623c6)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/03ef11bb-efc8-4dec-b846-be3911a18429)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/9d59bb91-a3b5-418f-9fab-e0c8fe6c07cd)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/3595a57c-2f88-4f9c-bb9d-1b4897e083de)
+![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/1619a11b-3c0b-4ca9-8575-a6762cbf64a0)
+
+
+
+
+
+
+
