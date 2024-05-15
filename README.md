@@ -43,7 +43,24 @@ The server is now available at http://localhost:8888
 ![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/3595a57c-2f88-4f9c-bb9d-1b4897e083de)
 ![image](https://github.com/Ifechukwu001/Predict395-Test/assets/66724426/1619a11b-3c0b-4ca9-8575-a6762cbf64a0)
 
+## Tests
 
+To test the application, run the following command from the root of the repository after the [setup](#setup)
+```bash
+    python src/manage.py test
+```
+
+## Admin Interface
+
+To access the admin interface, you need to first create a superuser.
+```bash
+    python src/manage.py createsuperuser
+```
+Then navigate to the admin root url http://localhost:8888/admin and login with the superuser credentials.
+
+
+---
+Developed by ifechukwu T. Ogidi ([Ifechukwu001](https://github.com/ifechukwu001))
 
 
 
